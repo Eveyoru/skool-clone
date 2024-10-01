@@ -2,10 +2,11 @@
 
 import { Loading } from "@/components/auth/loading";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
-import { useMutation, useQuery } from "convex/react";
+import {  useQuery } from "convex/react";
+// import { useMutation } from "convex/react";
 import { Lock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { NameEditor } from "./_components/name-editor";
