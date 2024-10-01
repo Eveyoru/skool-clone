@@ -1,6 +1,7 @@
-import { Doc, Id } from "@/convex/_generated/dataModel";
+import { Doc} from "@/convex/_generated/dataModel";
+// import {  Id } from "@/convex/_generated/dataModel";
 import { CommentCard } from "./comment-card";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { CommentInput } from "./comment-input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useEffect, useRef } from "react";
