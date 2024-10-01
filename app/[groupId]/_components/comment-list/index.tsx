@@ -7,7 +7,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { useEffect, useRef } from "react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { useMemo } from 'react';
+// import { useMemo } from 'react';
 
 interface CommentListProps {
     post: Doc<"posts"> & {
