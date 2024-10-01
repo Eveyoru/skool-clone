@@ -3,15 +3,16 @@ import { Avatar } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { api } from "@/convex/_generated/api";
 import { Doc } from "@/convex/_generated/dataModel";
-import { useApiMutation } from "@/hooks/use-api-mutation";
-import { cn } from "@/lib/utils";
+// import { useApiMutation } from "@/hooks/use-api-mutation";
+// import { cn } from "@/lib/utils";
 import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import { useMutation, useQuery } from "convex/react";
+import { useQuery } from "convex/react";
+// import { useMutation} from "convex/react";
 import {
     formatDistanceToNow
 } from 'date-fns';
 import { MessageSquare, PenBox, ThumbsUp, Trash2 } from "lucide-react";
-import { Content } from "@/components/content";
+// import { Content } from "@/components/content";
 import {
     Dialog,
     DialogContent,
@@ -21,7 +22,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 
 interface PostCardProps {
@@ -34,8 +35,8 @@ interface PostCardProps {
 }
 
 export const PostCard = ({
-    post,
-    className,
+    post
+    // className,
 }: PostCardProps) => {
     const currentUser = useQuery(api.users.currentUser, {});
     const timeAgo = formatDistanceToNow(post._creationTime);
