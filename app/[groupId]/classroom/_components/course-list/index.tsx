@@ -12,7 +12,7 @@ interface CourseListProps {
 };
 
 export const CourseList = ({ groupId }: CourseListProps) => {
-    const courses = useQuery(api.courses.list, { groupId: groupId });
+    // const courses = useQuery(api.courses.list, { groupId: groupId });
     const currentUser = useQuery(api.users.currentUser, {});
     const group = useQuery(api.groups.get, { id: groupId });
     const router = useRouter();
