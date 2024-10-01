@@ -2,8 +2,8 @@
 
 import { Id } from "@/convex/_generated/dataModel";
 import { CourseList } from "./_components/course-list/";
-import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+// import { useQuery } from "convex/react";
+// import { api } from "@/convex/_generated/api";
 
 interface ClassroomProps {
     params: {
