@@ -2,7 +2,8 @@
 
 import { api } from "@/convex/_generated/api"
 import { useQuery } from "convex/react"
-import { ChevronDown, Compass, Plus, Sparkles, Zap } from "lucide-react";
+import { ChevronDown, Compass, Plus } from "lucide-react";
+// import { Sparkles, Zap } from "lucide-react";
 
 import {
     Popover,
@@ -13,7 +14,7 @@ import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { Id } from "@/convex/_generated/dataModel";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Loading } from "../auth/loading";
+// import { Loading } from "../auth/loading";
 import { Logo } from "../logo";
 
 
