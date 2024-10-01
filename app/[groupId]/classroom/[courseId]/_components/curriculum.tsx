@@ -1,5 +1,6 @@
 import { Doc, Id } from "@/convex/_generated/dataModel";
-import { BookCheck, CaseSensitive, ChevronRight, ChevronsRight, Component, Pen } from "lucide-react";
+import { BookCheck, CaseSensitive, Component, Pen } from "lucide-react";
+// import {  ChevronRight, ChevronsRight } from "lucide-react";
 import { LessonView } from "./lesson-view";
 import { useState } from "react";
 import { useQuery } from "convex/react";

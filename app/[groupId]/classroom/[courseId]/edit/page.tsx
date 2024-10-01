@@ -1,7 +1,8 @@
 "use client";
 
 import { Doc, Id } from "@/convex/_generated/dataModel";
-import { BookCheck, CaseSensitive, ChevronRight, ChevronsRight, Component, Fullscreen, Pen, Plus, Trash2 } from "lucide-react";
+import { BookCheck, CaseSensitive, Component, Fullscreen, Plus, Trash2 } from "lucide-react";
+// import {  ChevronRight, ChevronsRight, Pen } from "lucide-react";
 import { useState } from "react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
@@ -23,7 +24,7 @@ const CourseEditPage = ({ params }: CourseEditPageProps) => {
     const course = useQuery(api.courses.get, { id: params.courseId });
     const updateTitle = useMutation(api.courses.updateTitle);
     // const updateModuleTitle = useMutation(api.modules.updateTitle);
-    const updateDescription = useMutation(api.courses.updateDescription);
+    // const updateDescription = useMutation(api.courses.updateDescription);
 
     const currentUser = useQuery(api.users.currentUser, {});
     const group = useQuery(api.groups.get, { id: params.groupId });
@@ -34,7 +35,8 @@ const CourseEditPage = ({ params }: CourseEditPageProps) => {
     const removeLesson = useMutation(api.lessons.remove);
     const removeModule = useMutation(api.modules.remove);
 
-    const [moduleTitle, setModuleTitle] = useState("");
+    // const [setModuleTitle] = useState("");
+    // const [moduleTitle] = useState("");
 
     if (!course || Array.isArray(course)) return <div>Loading...</div>;
 

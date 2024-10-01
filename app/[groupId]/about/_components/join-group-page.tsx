@@ -2,11 +2,11 @@
 
 import { AboutSide } from "@/components/about-side";
 import { Loading } from "@/components/auth/loading";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
 import { useQuery } from "convex/react";
-import { Lock } from "lucide-react";
+// import { Lock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { DescriptionEditor } from "../../edit/_components/description-editor";
 
