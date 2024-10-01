@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@blocknote/core": "^0.15.7",
-    "@blocknote/mantine": "^0.15.7",
     "@clerk/nextjs": "^5.5.2",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
