@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+//import { Textarea } from "@/components/ui/textarea";
 import {
     Dialog,
     DialogClose,
@@ -27,8 +27,8 @@ export const CreatePostModal = ({
         pending: createPostPending,
     } = useApiMutation(api.posts.create);
     const [title, setTitle] = useState<string>("");
-    const [content, setContent] = useState<string>("");
-
+    const [content] = useState<string>("");
+// const [setContent]
     const handlePost = async () => {
         if (title === "") return;
         console.log("title sent");
