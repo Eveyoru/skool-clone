@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button"
-import { Id } from "@/convex/_generated/dataModel";
+//import { Id } from "@/convex/_generated/dataModel";
 import { useParams, useRouter } from "next/navigation";
 
 export const GroupNavbar = () => {
