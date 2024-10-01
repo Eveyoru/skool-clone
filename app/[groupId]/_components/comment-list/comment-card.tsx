@@ -17,8 +17,8 @@ export const CommentCard = ({ comment, author }: CommentCardProps) => {
     const isOwner = comment.authorId === currentUser?._id;
 
     const {
-        mutate: remove,
-        pending: removePending
+        mutate: remove
+        // pending: removePending
     } = useApiMutation(api.comments.remove);
 
     const handleRemove = () => {
